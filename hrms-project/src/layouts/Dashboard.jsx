@@ -6,6 +6,7 @@ import JobSeekerList from "../pages/JobSeekerList";
 import ResumeList from "../pages/ResumeList";
 import Sidebar from "./Sidebar";
 import { Grid } from "semantic-ui-react";
+import JobAdvertForm from "../pages/JobAdvertForm";
 
 export default function Dashboard() {
   return (
@@ -16,6 +17,8 @@ export default function Dashboard() {
             <Sidebar />
           </Grid.Column>
           <Grid.Column width="12">
+            <JobAdvertForm/>
+            
             <JobAdvertList />
             <ResumeList />
             <JobPositionList />
